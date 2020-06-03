@@ -1,4 +1,4 @@
-# udemy-begginer-vuejs
+# begginer-vuejs
 
 ## Project setup
 ```
