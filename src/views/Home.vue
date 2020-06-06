@@ -5,7 +5,7 @@
       <p slot="info">Ceci est mon info</p>
     </HelloWorld>
     <p>Total: {{ calculateVTA | displayEuroSign }} euros</p>
-    <p @click="increase = price++">Augmenter le prix</p>
+    <p @click="increase = price++" class="cursor">Augmenter le prix</p>
   </div>
 </template>
 
@@ -39,4 +39,7 @@ export default {
 </script>
 
 <style scoped>
+.cursor {
+  cursor: pointer;
+}
 </style>

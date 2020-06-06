@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ message }}</h1>
+    <b-button pill variant="outline-danger" class="mb-2" type="button" @click="addFruits">Add Fruits</b-button>
     <div v-if="myArray">
-      <p v-for="(el, index) in myArray" :key="index">{{ el }}</p>
+      <p v-for="(element, index) in myArray" :key="index">{{ element }}</p>
     </div>
-    <button type="button" @click="addFruits">Add Fruits</button>
   </div>
 </template>
 
@@ -18,7 +18,8 @@ export default {
   methods: {
     addFruits() {
       let fruitsList = ["Pommes", "Poires", "Oranges"];
-      this.$emit( // permet d'envoyé des données au parent contrairement au props 
+      this.$emit(
+        // permet d'envoyé des données au parent contrairement au props
         "addFruitToBasket",
         fruitsList[Math.floor(Math.random() * fruitsList.length)]
       );

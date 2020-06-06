@@ -3,10 +3,10 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from '../views/Home.vue'
-import Profile from '../views/Profile.vue'
+import Home from '@/views/Home.vue'
+import Profile from '@/views/Profile.vue'
 
-import NotFound from '../components/NotFound.vue'
+import NotFound from '@/components/NotFound.vue'
 
 const routes = [
     {

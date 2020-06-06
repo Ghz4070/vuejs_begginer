@@ -6,12 +6,10 @@
 
 <script>
 export default {
-    name: "Profile",
-    mounted() {
-        
-    },
+  name: "Profile",
+  mounted() {}
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 </style>
