@@ -1,12 +1,15 @@
 <template>
   <div id="app">
     <NavHeader />
-    <router-view />
+    <vue-page-transition>
+      <router-view />
+    </vue-page-transition>
   </div>
 </template>
 
 <script>
 import NavHeader from "./components/nav/NavHeader";
+
 export default {
   name: "App",
   components: {

@@ -1,10 +1,12 @@
 <template>
-  <div class="hello">
+  <div class="hello pt-2">
     <h1>{{ message }}</h1>
     <b-button pill variant="outline-danger" class="mb-2" type="button" @click="addFruits">Add Fruits</b-button>
     <div v-if="myArray">
       <p v-for="(element, index) in myArray" :key="index">{{ element }}</p>
     </div>
+    <p slot="footer">Ceci est mon SLOT footer</p>
+    <h2 slot="info">Cliquez sur "Augmenter le prix"</h2>
   </div>
 </template>
 

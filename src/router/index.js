@@ -18,11 +18,15 @@ const routes = [
         name: "Home",
         path: '/',
         component: Home,
+        // we can choose fade-in-right / fade-in-left / fade-in-up
+        meta: { transition: 'fade-in-right' },
     },
     {
         name: "Profile",
         path: '/profile',
         component: Profile,
+        // overwrite default transition
+        meta: { transition: 'fade' },
     },
 ]; // les routes se strock dans un array
 

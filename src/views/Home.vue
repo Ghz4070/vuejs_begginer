@@ -1,10 +1,10 @@
 <template>
   <div id="Home">
     <HelloWorld message="Panier:" :myArray="fruits" @addFruitToBasket="addThisFruit">
-      <p slot="footer">Ceci est mon footer</p>
-      <p slot="info">Ceci est mon info</p>
+      <slot slot="footer"></slot>
+      <slot slot="info"></slot>
     </HelloWorld>
-    <p>Total: {{ calculateVTA | displayEuroSign }} euros</p>
+    <p>Total: {{ calculateVTA | displayEuroSign }}</p>
     <p @click="increase = price++" class="cursor">Augmenter le prix</p>
   </div>
 </template>
